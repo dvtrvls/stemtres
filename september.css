@@ -1,0 +1,276 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+*::selection {
+  background: transparent;
+  color: inherit;
+  -webkit-text-stroke: 1px black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url("images/septbg_1.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover ;
+  background-color: black;
+  animation: fadein;
+  animation-duration: 2s
+}
+
+
+@keyframes fadein{
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+
+.monthtextcont{
+  height: 25rem;
+  width: 90%;
+  border: black solid 2px;
+  margin: auto;
+  display: flex;
+  border-radius: 30px;
+  margin-top: 5rem;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 5px 5px 20px black;
+  -webkit-text-stroke: 1px black;
+  
+}
+
+
+.septembertextcont{
+  background-image: url("images/septtextbg.jpg");
+  }
+
+
+.monthtext{
+  font-size: 8rem;
+  font-family: Slackey;
+  margin: auto;
+}
+
+.septembertext{
+  color: antiquewhite;
+  font-size: 7.8rem;
+  display: block;
+  text-align: center
+}
+
+
+
+
+.navbarcont{
+  background-image: url("images/navbgsept.jpg");
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: 60px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 20px black;
+  overflow: hidden
+  
+  
+}
+
+.navbarcont ul{
+  list-style-type: none;
+}
+
+
+
+.nav{
+  padding: 2rem;
+  display: block;
+  text-align: center;
+  color: bisque;
+  -webkit-text-stroke: 1px black;
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: Frijole;
+}
+
+.nav1, .back{
+  border-bottom: 2px solid black
+}
+
+
+.maincont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 95%;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+
+.labelcont{
+  background-image: url("images/paperbg.jpg");
+  box-shadow: 3px 3px 20px black;
+  width: 40%;
+  height: 5rem;
+  display: flex;
+  border-radius: 20px;
+  margin: auto
+}
+
+.bdaytext{
+  font-size: 3rem;
+  font-family: Frijole;
+  justify-self: center;
+  align-self: center;
+  margin: auto;
+  color: #94280A;
+  -webkit-text-stroke: 0.1px black;
+  
+}
+
+.piccont{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px black;
+  margin-top: 4rem;;
+  margin-bottom: 3rem;
+  
+}
+.bidyoata{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.cakecont{
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 2rem;;
+  margin-bottom: 3rem;
+  
+}
+.firstdaypic{
+  object-fit: contain;
+  width: 100%
+}
+
+.labelcontendthin{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+  height: 1rem;
+  box-shadow: 5px 5px 15px black
+}
+
+.commentcontainer{
+  margin: auto;
+  margin-top: 3rem;
+  height: 8rem;
+  padding: 1rem;
+  width: 70%;
+  border: black 2px solid;
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 3px 10px black;
+  background-image: url("images/commentbg.jpg");
+}
+
+.comment{
+  font-family: monospace;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.commentbago2{
+  font-family: monospace;
+  font-size: 2rem;
+  text-align: justify;
+  margin: auto
+}
+
+.bdaycomment{
+  font-family: monospace;
+  font-size: 2rem;
+  text-align: justify;
+  margin: auto;
+  animation: party;
+  animation-iteration-count: linear;
+  animation-direction: 3s;
+  animation-iteration-count: infinite
+}
+
+.bdaycommentcont{
+  margin: auto;
+  margin-top: 3rem;
+  height: 8rem;
+  padding: 1rem;
+  width: 70%;
+  border: black 2px solid;
+  display: flex;
+  align-items: center;
+  background-image: url("images/commentbg.jpg");
+  animation: party;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite
+}
+
+@keyframes party{
+  0%{box-shadow:  0px 0px 50px red}
+  20%{box-shadow: 0px 0px 50px blue}
+  40%{box-shadow: 0px 0px 50px yellow}
+  60%{box-shadow: 0px 0px 50px green}
+  80%{box-shadow: 0px 0px 50px violet}
+  100{box-shadow: 0px 0px 50px red}
+}
+
+
+.piccont4{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px
+}
+
+.khalilinterview1{
+  object-fit: contain;
+  width: 100%;
+  border: black 3px solid;
+  box-shadow: 3px 3px 10px black
+}
+
+.khalilinterview2{
+  object-fit: contain;
+  width: 100%;
+  border: black 3px solid;
+  box-shadow: 3px 3px 10px black
+}
+
+
+.montage{
+  object-fit: contain;
+  width: 100%;
+  border: black 3px solid;
+  box-shadow: 3px 3px 10px black
+}
+
+.blank{
+  width: 100%;
+  height: 10rem;
+}
+
+a{
+  text-decoration-style: none
+}

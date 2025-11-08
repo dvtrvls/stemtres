@@ -1,0 +1,268 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+
+
+body{
+  background-image: url("images/background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover ;
+  background-color: black;
+  animation: fadeinin 1.5s
+}
+
+
+
+@keyframes fadeinin{
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+.boxtitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  margin: 2rem auto;
+  width: 90%;
+  height: 20vh;
+  border: #1C1C1C solid 5px;
+  background: #D6CBBE;
+  border-radius: 50px;
+  background-image: url("images/title_background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover ;
+}
+
+h1.title  {
+  font-family: "Walter Turncoat";
+  font-weight: bolder;
+  font-size: 7rem;
+  padding: 3rem;
+  border-radius: 20px;
+  color: bisque;
+  text-shadow: 3px 3px 20px black;
+
+  
+}
+
+.navHOME{
+  text-decoration-style: none;
+  font-size: 2rem;
+  font-family: "Walter Turncoat";
+  font-weight: bold;
+  color: bisque;
+  display: block;
+  padding: 1rem;
+}  
+
+.homenav{
+  margin: 2rem auto;
+  width:90%;
+  border-radius: 50px;
+  border: 5px black solid;
+  margin-top: 3rem;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 5rem;
+} 
+
+
+.navbar{
+  margin: 2rem auto;
+  width:50%;
+  border-radius: 50px;
+  border: 5px black solid;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 0;
+  
+}
+
+.homenav li{
+  background-image: url("images/homeclasslistbg.jpg");
+  border-bottom: black 2px solid;
+  
+}
+
+.homenav li #home{
+  color: darkolivegreen;
+  font-size: 3rem
+  
+}
+
+
+.navbar ul{
+  list-style-type: none;
+    border-radius: 50px
+}
+
+.navbar li{
+  background-image: url("images/navbg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  border-bottom: black 2px solid;
+  transition: filter 0.2s
+}
+
+
+.navbar .navHOME{
+  text-decoration: none;
+  
+}
+
+.navbar li:hover{
+  filter: brightness(70%)
+}
+
+
+
+
+.homecontentcontainer{
+  display: flex;
+  height: 40rem;
+  border-radius: 20px;
+  width: 90%;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.wrapper{
+  width: 90%;
+  height: 85%;
+  margin: auto;
+  margin-top: 4rem;
+  position: relative;
+  overflow: hidden;
+  mask: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0))
+
+
+  
+}
+
+.slidingpic{
+  height: 100%;
+  border: 1px black solid;
+  width: 70%;
+  position: absolute;
+  left: 100%;
+  animation: slideright;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.5), 6px 6px 20px rgba(0,0,0,1);
+  background-image:url("images/whitecanvasbg.jpg");
+}
+  
+  
+
+
+@keyframes slideright{
+  to{left: -70%}
+}
+
+
+.slidingpic1{animation-delay: calc(25s / 2 * (2 - 1) * -1)}
+.slidingpic2{animation-delay: calc(25s / 2 * (2 - 2) * -1)}
+
+
+
+img{
+  width:100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.homecontentcontainer2{
+  display: flex;
+  height: 60rem;
+  background-image:url("images/brownpaperbg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 20px;
+  width: 90%;
+  margin: 2rem auto;
+  position: relative;
+  display: flex;
+  border: #7B4B36 3px solid;
+  box-shadow: 3px 3px 40px black;
+  flex-direction: column
+}
+
+
+.f2ltextcontainer{
+  width: 95%;
+  height: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  
+}
+
+.f2ltext{
+  font-size: 4rem;
+  font-family: "Imperial Script";
+  font-weight: bold;
+  text-align: justify;
+  background-color: #DDCBB7;
+  border: black 2px solid;
+  box-shadow: 3px 3px 20px black;
+  letter-spacing: 0.1rem
+}
+
+.paragraphcont{
+  width: 90%;
+  height: 70%;
+  border: black 2px solid;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+
+.paragraph{
+  font-family: monospace;
+  font-size: 2rem;
+  text-justify: auto;
+  height: 100%;
+  width: 100%;
+  color: bisque;
+  background: #273B09;
+  margin: auto;
+  line-height: 2.5rem;
+  box-shadow: 3px 3px 20px black;
+  
+}
+
+#disclaimer{
+  background-image: url("images/paperbg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 90%;
+  margin: 2rem auto;
+  overflow: wrap;
+  border: black 3px solid;
+  padding: 1rem;
+  filter: brightness(90%);
+  box-shadow: 3px 3px 10px black;
+  display: flex;
+  
+}
+
+#disclaimertext{
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: bold
+}
+
+#creator:visited{
+  color: blue;
+}
